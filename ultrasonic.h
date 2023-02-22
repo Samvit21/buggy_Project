@@ -1,10 +1,12 @@
 //header file dedicated to ultrasonic sensor code.
 
-#define trigPinF A0
+#define trigPinF A0 //Analogue input for Front sensor
 #define echoPinF A1
+
+#define trigPinS A2 //Analogue input for Side sensor
+#define echoPinS A3
+
 const int max_dist = 100;
-//const int trigPinSF = 3;
-//const int echoPinSF = 4;
 //const int trigPinSB = 5;
 //const int echoPinSB = 6;
 
