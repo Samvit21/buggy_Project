@@ -5,6 +5,7 @@ int IN2 = 8;
 int IN3 = 9;
 int IN4 = 10;
 
+//Function to move the buggy FORWARD
 void forward(){
   //go forward
   digitalWrite(IN1, HIGH);
@@ -13,6 +14,7 @@ void forward(){
   digitalWrite(IN4, LOW);
 }
 
+//Function to STOP the buggy
 void freeze(){
   //stop immediately
   digitalWrite(IN1, LOW);
@@ -21,6 +23,7 @@ void freeze(){
   digitalWrite(IN4, LOW);
 }
 
+//Corrects buggy direction through small CLOCKWISE rotation
 void adjust_clock(){
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, LOW);
@@ -33,6 +36,7 @@ void adjust_clock(){
   digitalWrite(IN4, LOW);
 }
 
+//Corrects buggy direction through small ANTICLOCKWISE rotation
 void adjust_anticlock(){
   digitalWrite(IN1, LOW);
   digitalWrite(IN2, HIGH);
@@ -45,6 +49,7 @@ void adjust_anticlock(){
   digitalWrite(IN4, LOW);
 }
 
+//Rotates the buggy approximately 90 degrees CLOCKWISE
 void clockwise(){
 //  turn 90 degrees clockwise
   digitalWrite(IN1, HIGH);
@@ -64,6 +69,7 @@ void clockwise(){
 //  digitalWrite(IN4, LOW);   
 }
 
+//Rotates the buggy approximately 90 degrees ANTICLOCKWISE
 void anticlockwise(){
 //  turn 90 degrees clockwise
   digitalWrite(IN1, LOW);
